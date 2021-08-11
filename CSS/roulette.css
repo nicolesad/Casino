@@ -1,5 +1,24 @@
 body {
-    background-image: url("./img/Roulette/Roulette_SingleZero.png");
     background-color: rgb(10, 46, 10);
-    background-size: cover;
+}
+#board-div {
+    background-image: url("./img/Roulette/Roulette_SingleZero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 400px;
+
+
+}
+#firstbets-div {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#btnspin {
+    background-image: url("./img/Roulette/RouletteWheel_SingleZero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }

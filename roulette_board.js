@@ -1,8 +1,7 @@
-var tablediv = document.getElementById("tablediv");
-//when listener activates...
-//document.getElementById("submit").addEventListener("click", createRows(), false)
-function createRows() {
+var tablediv = document.getElementById("firstbets-div");
 
+function createFirstBets() {
+    
     var table = document.createElement('table')
     table.setAttribute('id', 'gridtable');
     var tableBody = document.createElement('tbody');
@@ -35,19 +34,3 @@ for(var i = 0; i < 19; i++) {
 tablediv.appendChild(table);
 }
 
-function setColor(button) {
-    hasPlayerMoved = false;
-    if(player === 1) {
-        button.style.opacity = "1.0";
-        button.style.backgroundImage = "url('./CSS/img/Orange_sm.png')";
-        button.style.cursor = "default";
-        
-    }else {
-        button.style.opacity = "1.0";
-        button.style.backgroundImage = "url('./CSS/img/Black_sm.png')";
-        button.style.cursor = "default";
-
-    }
-    
-    
-}
