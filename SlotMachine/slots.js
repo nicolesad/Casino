@@ -1,26 +1,9 @@
-
-
-// (function($) {
-//     $(function() { //on DOM ready
-//         $("#scroller2").simplyScroll({
-//             customClass: 'vert',
-//             orientation: 'vertical',
-//             auto: true,
-//             manualMode: 'end',
-//             frameRate: 24,
-//             speed: 12
-//         });
-//     });
-// })(jQuery);
-// (function($) {
-//     $(function() { //on DOM ready
-//         $("#scroller3").simplyScroll({
-//             customClass: 'vert',
-//             orientation: 'vertical',
-//             auto: true,
-//             manualMode: 'end',
-//             frameRate: 24,
-//             speed: 30
-//         });
-//     });
-// })(jQuery);
+function myFunction() {
+    document.getElementById("figure1").style.display = "none";
+    document.getElementById("figure2").style.display = "none";
+    document.getElementById("figure3").style.display = "none";
+    document.getElementById("newImageArea").src = "banana.png"
+    document.getElementById("newImageArea2").src = "banana.png"
+    document.getElementById("newImageArea3").src = "banana.png"
+    console.log("hidden")
+  }
