@@ -14,12 +14,21 @@
     <div class="titleArea">
         <h1>Welcome To The Slot Machine</h1>
         <a class="btn btn-info" href="../index.html">Go Back Home!</a>
+        <a class="btn btn-info" href="slots.html">Roll Again</a> 
         
     </div>
 
     <div>
-        <button onclick="myFunction()">Click me</button>
+        
         <h4 id="currentMoney">Your Current Balance: </h4>
+        
+        <button onclick="stopScrolling()">Stop Rolling!</button>
+        <form>
+            <label>Bet Amount: </label>
+            <input type="text" id="betAmount">
+            <h1 id="winOrLose"></h1>
+          </form> 
+          
     </div>
 
     <div class="slotArea">
@@ -69,7 +78,9 @@
 
 
             </div>
+            
         </div>
+
     </div>
 
 
