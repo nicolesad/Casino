@@ -1,5 +1,69 @@
 body {
-    background-image: url("./img/Roulette/Roulette_SingleZero.png");
     background-color: rgb(10, 46, 10);
+}
+#board-div {
+    background-image: url("./img/Roulette/Roulette_SingleZero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 400px;
+
+
+}
+#firstbets-div {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#btnspin {
+    background-image: url("./img/Roulette/RouletteWheel_SingleZero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+/* .board {
+    background-image: url("./img/Roulette/Roulette_SingleZero.png");
+    width: 740px;
+    height: 319px;
     background-size: cover;
+    background-repeat: no-repeat;
+} */
+/* .spinner {
+    background-image: url("./img/Roulette/RouletteWheel_SingleZero.png");
+    width: 433px;
+    height: 433px;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.chips {
+    display: flex;
+    flex-direction: row;
+}
+.chip {
+    width: 115px;
+    height: 115px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#c1 {
+    background-image: url("./img/OverallUI/Chip1.png");
+}
+#c5 {
+    background-image: url("./img/OverallUI/Chip5.png");
+}
+#c10 {
+    background-image: url("./img/OverallUI/Chip10.png");
+}
+#c20 {
+    background-image: url("./img/OverallUI/Chip20.png");
+}
+#c50 {
+    background-image: url("./img/OverallUI/Chip50.png");
+}
+#c100 {
+    background-image: url("./img/OverallUI/Chip100.png");
 }
