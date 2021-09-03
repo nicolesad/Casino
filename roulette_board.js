@@ -1,36 +1,55 @@
-var tablediv = document.getElementById("firstbets-div");
-
-function createFirstBets() {
-    
-    var table = document.createElement('table')
-    table.setAttribute('id', 'gridtable');
-    var tableBody = document.createElement('tbody');
-    table.appendChild(tableBody);
-for(var i = 0; i < 19; i++) {
-    //make 19 rows
-    var row = document.createElement('tr');
-    //name them appropriately (row0 - row18)
-    row.setAttribute('class', `row${i}`);
-    //add row to table
-    table.appendChild(row);
-    for(var j = 0; j < 19; j++) {
-        //create cells in each row + add to table
-        var cell = document.createElement('td');
-        cell = row.insertCell(j);
-        //in those cells add a button
-        var button = document.createElement('input');
-        //name them (btn_r0c0 - btn_r18c18)
-        button.setAttribute('class', `gamePiece`);
-        button.setAttribute('id', `btn_r${i}c${j}`);
-
-        //set all attributes
-        button.setAttribute('type', 'button');
-        //button.onclick = function(){};
-        button.onclick = function(){setColor(this)};
-        //add to table
-        cell.appendChild(button);
+var spin_b = document.getElementById("btnspin");
+var betred_b = document.getElementById("betred");
+var betblack_b = document.getElementById("betblack");
+var betout = black;
+var betin = null;
+spin_b.onclick = function () {
+    var rand = Math.floor(Math.random() * 37);
+    if (rand % 2 == 1 && rand < 10 ) {
+        betout = red;
+    } else if (rand % 2 == 0 && 11 < rand < 19) {
+        betout = red;
     }
+    else if (rand % 2 == 1 && 18 < rand < 30 ) {
+        betout = red;
+    } else if (rand % 2 == 0 && 29 < rand) {
+        betout = red;
+    }
+
+    if(betout == black && betin == black) {
+        //payout
+        alert("payed out!");
+        //add money to total
+    } else if(betout == black && betin != black) {
+        //no moneys
+        alert("lost");
+        //remove money from total
+    } else if(betout == red && betin == red) {
+        //payout
+        alert("payed out!");
+        //add money to total
+    } else if(betout == red && betin != red) {
+        //no moneys
+        alert("lost");
+        //remove money from total
+    }
+
 }
-tablediv.appendChild(table);
+
+
+
+betred_b.onclick = function() {
+    console.log("red bet placed");
+    betin = red;
+    spin_b.style.visibility = "visible";
 }
+
+betblack_b.onclick = function() {
+    console.log("black bet placed");
+    betin = black;
+    spin_b.style.visibility = "visible";
+}
+
+
+
 
