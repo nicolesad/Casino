@@ -36,7 +36,7 @@ spin_b.onclick = function () {
 
 }
 
-
+//fake change
 
 betred_b.onclick = function() {
     console.log("red bet placed");
