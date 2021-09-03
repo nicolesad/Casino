@@ -1,0 +1,99 @@
+html{
+    background-image: url("images\\Overall UI\\Generic Felt Mat.jpeg");
+    color: #fff;
+}
+#rules{
+    position: fixed;
+    left: 10px;
+    height: 100px;
+    width: 150px;
+}
+/* #rules:hover{
+    cursor: pointer;
+} */
+#cardStack{
+    position: fixed;
+    right: 20px;
+    height: 150px;
+    width: 100px;
+}
+#dealerCard{
+    height: 150px;
+    width: 100px;
+}
+#bet{
+    height: 60px;
+    width: 60px;
+}
+#playerCard{
+    height: 150px;
+    width: 100px;
+}
+#interaction{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: chocolate;
+}
+#money{
+    color: #FFF;
+    font-size: xx-large;
+    position: fixed;
+    right: 30px;
+    bottom: 250px;
+    width: 100px;
+    height: 50px;
+}
+#player{
+    position: fixed;
+    width: 100%;
+    bottom: 100px;
+}
+#dealerCards{
+    position: fixed;
+    top: 200px;
+}
+.buttons{
+    width: 190px;
+    height: 49px;
+    font-size: 25px;
+    text-align: center;
+    background-image: url("images\\Overall UI\\ButtonUp.png");
+}
+.buttons:hover{
+    cursor: pointer;
+}
+.buttons:active{
+    height: 45px;
+    background-image: url("images\\Overall UI\\ButtonDown.png");
+}
+.coins{
+    height: 80px;
+    width: 80px;
+
+    /* padding-left: 20px;
+    padding-right: 20px; */
+}
+.chip{
+    height: 80px;
+    width: 80px;
+}
+#deal{
+    display: none;
+}
+#otherButtons{
+    position: fixed;
+    right: 5px;
+    bottom: 0px;
+    /* height: 100px; */
+}
+#chips{
+    font-size: large;
+    position: fixed;
+    bottom: 100px;
+    background-color: blue;
+}
